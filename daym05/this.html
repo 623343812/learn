@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var x = 0;
+        function test() {
+            alert(this.x);
+        }
+        var o = {};
+        o.x = 1;
+        o.m = test;
+        o.m.apply(c);
+        var c = {};
+        c.x = 2;
+        c.m = test;
+        c.m.apply(o);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

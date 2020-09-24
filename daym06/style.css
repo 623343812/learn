@@ -1,0 +1,28 @@
+#regexp {
+    width:650px;
+    margin:100px auto;
+}
+#regexp .title {
+    font-size:24px;
+    text-align: center;
+}
+#regexp #userText {
+    width:638px;
+    height:150px;
+    border:1px solid #777;
+    border-radius: 5px;
+    resize:none;
+    padding:5px;
+}
+#regexp #useRegExp {
+    width: 215px;
+}
+#regexp #matchingResult {
+    width:638px;
+    height:150px;
+    border:1px solid #777;
+    border-radius: 5px;
+    resize:none; 
+    padding:5px;
+}
+}

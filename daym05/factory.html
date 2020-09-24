@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+/*         function createObject(name,age) {
+            var obj = new Object();
+            obj.name = name;
+            obj.age = age;
+            obj.say = function(){
+                return this.name + '---' + this.age + '运行中';
+            };
+            obj.run = function() {
+                return 'hello,你好呀!';
+            };
+            return obj;
+        }
+        var obj1 = createObject('张三',18);
+        alert(obj1.say()); */
+         function person(name,sex,age) {
+             this.name = name;
+             this.sex = sex;
+             this.age = age;
+             this.say = function() {
+                 alert(123);
+             }
+         }
+         var obj1 = new person('zy','male',17);
+         obj1.say();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

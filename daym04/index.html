@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var xm = {
+            age: 18,
+            score:4
+        };
+        var xh = {
+            age: 18,
+            score:4
+        };
+        // console.log(xm===xh);
+        function equalObjs(a,b) {
+            for (var p in a) {
+                if (a[p] !== b[p]) return false;
+            }
+            return true;
+        }
+        // console.log(equalObjs(xm,xh));
+
+        function equalArrays(a,b) {
+            if(a.legth!==b.length) return false;
+            for(var i = 0; i < a.length; i++) {
+                if(a[i]!==b[i]) return false;
+            }
+            return true;
+        }
+
+        var xx = {
+            age:18,
+            score:6
+        };
+        var xc = xx;
+        xc.score++;
+        // console.log(xx.score);
+        var xz = {
+            age:18,
+            score:8
+        };
+
+        function copyObj(obj) {
+            var newObj = {};
+            for(var p in obj) {
+                newObj[p] = obj[p];
+            }
+            return newObj;
+        }
+        xa = copyObj(xz);
+        // console.log(xa === xm);
+        console.log(xa);
+        console.log(xz);
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

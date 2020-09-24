@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function animal() {
+            this.name = 'ani';
+            this.say = function() {
+                alert(this.name);
+            };
+        }
+        function cat() {
+            this.name = 'cat';
+            this.bark = function() {
+                alert('汪汪~~');
+            };
+        }
+        var an = new animal();
+        var c = new cat();
+        an.say.call(c,'dasf');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str = "中国军队和阿扁一起办证";
+        var pattern = /(国军)|(阿扁)|办证/g;
+        console.log(str.replace(pattern,function($0){
+            var result = '';
+            for(var i = 0; i < $0.length; i++){
+                result += '*';
+            }
+            return result;
+        }));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

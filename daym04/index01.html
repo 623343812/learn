@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var person = {};
+        person.name = 'xm';
+        person.sex = 'male';
+        var score = 4;
+        
+        with(person) {
+            name = 'xh';
+            sex = 'female';
+            score = 44;
+        }
+        // console.log(person.name);
+        // console.log(person.sex);
+        // console.log(score);
+
+        var a = 1;
+        function fn(a) {
+            console.log(a);
+            var a = 2;
+        }
+        fn(a);
+        console.log(a);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

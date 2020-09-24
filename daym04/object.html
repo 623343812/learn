@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var cat = {
+            name:'Tom',
+            age:4,
+            family:['father','mom'],
+            speak:function() {
+                console.log('喵喵~~');
+            },
+            friend:{
+                name:'Tom',
+                age:5
+            }
+        };
+        for(p in cat) {
+            console.log(p);
+            console.log(cat[p]);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

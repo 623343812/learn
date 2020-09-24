@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun() {
+            this.name = 'zyy';
+            this.age = 18;
+            this.say = function() {
+                alert(this.name);
+            };
+        }
+        var obj = new fun();
+        // delete obj.name;
+        obj.say();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

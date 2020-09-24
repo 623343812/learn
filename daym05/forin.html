@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*         var ren = {};
+        ren.name = 'zzy';
+        ren.sex = 'male';
+        ren.age = 19;
+        ren.say = function(str) {
+            alert(this.name + str)
+        }
+        for(var i in ren){
+            alert(ren[i]);
+        } */
+        function ren() {
+            this.name = 'zzy';
+            this.sex = 'male';
+            this.age = 19;
+            this.say = function (str) {
+                alert(this.name + str)
+            }
+        }
+        var r = new ren();
+        for(var i in r) {
+            alert(r[i])
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

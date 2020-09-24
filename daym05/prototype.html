@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+/*         function test() {
+
+        }
+        test.prototype.color = 'red';
+        test.prototype.height = 1.7;
+        test.prototype.price = 3.2;
+        test.prototype.info = function() {
+            alert(this.color +'---' + this.height +'---'+ this.price);
+        } 
+        test.prototype.run = function() {
+            alert('直接芜湖~~~');
+        }
+        var car1 = new test();
+        car1.info(); */
+/*         function test() {
+
+        }
+        test.prototype = {
+            color:'red',
+            height:1.7,
+            widths:1.2,
+            run:function() {
+                alert(this.color+'---'+this.height+'---'+this.widths);
+            },
+            move:function() {
+                alert('你好呀')
+            }
+        }
+        var car1 = new test();
+        car1.run(); */
+        //混合模型 构造+原型
+        function blog(name,url,age) {
+            this.name = name;
+            this.url = url;
+            this.age = age;
+        }
+        blog.prototype = {
+            test:'sss',
+            say:function() {
+                alert(this.name +'---'+this.url+'--'+this.age);
+            },
+            run:function(str) {
+                alert('heihei'+str)
+            }
+        };
+        var person = new blog('zzy','www.cctv.com',18);
+        // alert(person.name);
+        person.say();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
